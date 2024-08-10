@@ -1,0 +1,2 @@
+export const ERROR_429 = "Your current plan has limitations on the number of API calls per minute. Consider upgrading."
+export const ERROR_400_OR_404 = "Some images are not supported or have invalid formats."

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Alt Text Improver</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Wa11y</h1>
+  <div id="loading" class="loading" style="display:none;"></div>
+  <div id="slowNetworkMessage" class="slowNetworkMessage" style="display:none;">
+    Slow network. This might take longer than usual.
+  </div>
+  <div id="doneMessage" class="doneMessage" style="display:none;">Done!</div>
+  <div id="apiKeySection">
+    <input type="text" id="apiKeyInput" placeholder="Enter Gemini API Key">
+    <button id="saveApiKey">Save API Key</button>
+  </div>
+  <button id="improveAltText">Improve Alt Text</button>
+  <button id="invalidateApiKey" style="display:none;">Invalidate API Key</button>
+  <script src="popup.js"></script>
+</body>
+</html>

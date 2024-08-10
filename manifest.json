@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "wa11y",
+  "version": "1.0",
+  "description": "A tool that improves image alts with Gemini API",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
