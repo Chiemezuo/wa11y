@@ -27,7 +27,7 @@
 
 ## Usage
 
-1. After installing the extension, open the options page.
+1. After installing the extension, open it.
 2. Enter your Google Gemini API key in the designated field.
 3. Browse to any webpage with images.
 4. Click the "Improve Alt Text" button in the extension popup.
