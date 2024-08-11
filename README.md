@@ -1,6 +1,6 @@
-# Wa11y - Accessibility Made Easy
+# WebA11y - Accessibility Made Easy
 
-**Wa11y** is a Chromium-based browser extension designed to enhance web accessibility by improving alt text for images. With a simple click of the "Improve Alt Text" button, Wa11y leverages the power of Google Gemini API to automatically update poor or missing alt texts, making the web more accessible to everyone.
+**WebA11y** is a Chromium-based browser extension designed to enhance web accessibility by improving alt text for images. With a simple click of the "Improve Alt Text" button, WebA11y leverages the power of Google Gemini API to automatically update poor or missing alt texts, making the web more accessible to everyone.
 
 ## Features
 
@@ -8,7 +8,7 @@
 - **One-Click Improvement**: Enhance the alt texts of all images on a webpage with a single click.
 - **Accessibility Focused**: Improve web accessibility by ensuring that all images have meaningful alt texts.
 - **Graceful Handling of API Limits**: The extension respects API call limits and stops processing when the limit is reached, leaving existing alt texts unchanged.
-- **Invalid Image Handling**: Wa11y skips any invalid images and continues processing valid ones without interruption.
+- **Invalid Image Handling**: WebA11y skips any invalid images and continues processing valid ones without interruption.
 
 ## Installation
 
@@ -42,13 +42,13 @@
 
 ## API Key Setup
 
-To use Wa11y, you need to provide your Google Gemini API key:
+To use WebA11y, you need to provide your Google Gemini API key:
 
 1. Go to the [Google Cloud Console](https://console.cloud.google.com/).
 2. Create a new project or use an existing one.
 3. Enable the Google Gemini API.
 4. Generate an API key.
-5. Enter this key into the Wa11y extension.
+5. Enter this key into the WebA11y extension.
 
 ## Contributing
 
@@ -56,4 +56,4 @@ We welcome contributions! If you find a bug or have an idea for an improvement, 
 
 ---
 
-**Wa11y** - Making the web more accessible, one alt text at a time.
+**WebA11y** - Making the web more accessible, one alt text at a time.

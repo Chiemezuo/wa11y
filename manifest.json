@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "wa11y",
+  "name": "WebA11y",
   "version": "1.0",
   "description": "A tool that improves image alts with Gemini API",
   "permissions": [
