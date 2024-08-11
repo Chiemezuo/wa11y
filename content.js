@@ -27,7 +27,7 @@ async function generateAltText(imageUrl, altText) {
     }
   }
 
-  return "Something is wrong with your API key"
+  return altText
 }
 
 // optionally, upload all the images in bulk
@@ -98,7 +98,8 @@ async function callGeminiAPI(apiKey, imageUrl, altText) {
   }
 
   const data = await response.json();
-  return data.candidates[0].content.parts[0].text;
+  const text = data.candidates[0].content.parts[0].text;
+  return text;
 }
 
 async function getBase64Image(imageUrl) {

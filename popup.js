@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const loadingIndicator = document.getElementById('loading');
   const invalidateApiKeyButton = document.getElementById('invalidateApiKey');
   const doneMessage = document.getElementById('doneMessage');
-  const slowNetworkMessage = document.getElementById('slowNetworkMessage');
+  const multipleImagesMessage = document.getElementById('multipleImagesMessage');
 
   // check if API key exists or has been stored
   chrome.storage.local.get(['geminiApiKey'], function(result) {
@@ -55,9 +55,9 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     });
 
-    // Show slow network message after 15 seconds
+    // Show multiple images message after 15 seconds
     setTimeout(() => {
-      slowNetworkMessage.style.display = 'block';
+      multipleImagesMessage.style.display = 'block';
     }, 25000);
   });
 
@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Listen for the message from the content script indicating completion
   chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     if (request.message === 'enhancementComplete') {
-      slowNetworkMessage.style.display = 'none'; // Hide slow network message if visible
+      multipleImagesMessage.style.display = 'none'; // Hide multiple images message if visible
       loadingIndicator.style.display = 'none'; // Hide loading indicator
       doneMessage.style.display = 'block'; // Show "All done!" message
 
@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function() {
         window.close();
       }, 3000);
     } else if (request.message === ERROR_429) {
-      slowNetworkMessage.style.display = 'none'; // Hide slow network message if visible
+      multipleImagesMessage.style.display = 'none'; // Hide multiple images message if visible
       loadingIndicator.style.display = 'none'; // Hide loading indicator
       doneMessage.textContent = "Not all images could be changed due to rate limitations on your plan. Consider Upgrading"
       doneMessage.style.fontSize = '14px'

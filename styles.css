@@ -68,8 +68,8 @@ button#invalidateApiKey:hover {
   margin-top: 20px;
 }
 
-/* Slow Network Message */
-.slowNetworkMessage {
+/* Multiple Images Message */
+.multipleImagesMessage {
   text-align: center;
   color: #FF5722;
   font-size: 14px;
