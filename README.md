@@ -1,5 +1,8 @@
 # WebA11y - Accessibility Made Easy
 
+## Important
+Version 2 of this project is underway, and will see some overall revamps and cleanups.
+
 **WebA11y** is a Chromium-based browser extension designed to enhance web accessibility by improving alt text for images. With a simple click of the "Improve Alt Text" button, WebA11y leverages the power of Google Gemini API to automatically update poor or missing alt texts, making the web more accessible to everyone.
 
 ## Features
